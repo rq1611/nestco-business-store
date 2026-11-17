@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NÉST & CO. — pilihan kebutuhan rumah dan gaya hidup yang dirancang untuk menemani keseharian." />
+  <meta name="theme-color" content="#f7f6f1" />
+  <title>NÉST & CO. — Better Living, Everyday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Announcement bar -->
+  <div class="announcement-bar">
+    <p>WELCOME HOME — GRATIS ONGKIR UNTUK PEMBELIAN DI ATAS Rp300.000</p>
+  </div>
+
+  <!-- Header / navigasi utama -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a class="brand" href="#home" aria-label="NÉST & CO. beranda">
+        <span class="brand-mark">N.</span>
+        <span class="brand-copy"><strong>NÉST <span>&</span> CO.</strong><small>BETTER LIVING, EVERYDAY</small></span>
+      </a>
+
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#home">Beranda</a>
+        <a href="#shop">Belanja</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button search-toggle" id="searchToggle" aria-label="Cari produk" title="Cari produk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        </button>
+        <button class="icon-button wishlist-toggle" id="wishlistToggle" aria-label="Lihat wishlist" title="Wishlist">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 10.2-8.8 10.2S3.2 14 3.2 8.8A4.5 4.5 0 0 1 12 6.2a4.5 4.5 0 0 1 8.8 2.6Z"></path></svg>
+          <span class="counter-badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-button cart-toggle" id="cartToggle" aria-label="Buka keranjang" title="Keranjang belanja">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.5L22 8H6"></path><circle cx="10" cy="20" r="1.2"></circle><circle cx="18" cy="20" r="1.2"></circle></svg>
+          <span class="counter-badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search bar muncul saat tombol pencarian diklik -->
+    <div class="search-panel" id="searchPanel" aria-hidden="true">
+      <div class="container search-panel-inner">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input type="search" id="globalSearch" placeholder="Cari produk yang kamu inginkan..." autocomplete="off" />
+        <button class="text-button" id="closeSearch">Tutup</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / company value proposition -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> THOUGHTFUL GOODS FOR EVERYDAY</span>
+          <h1>Make room for<br /><em>better living.</em></h1>
+          <p class="hero-description">Temukan barang pilihan yang membuat ruang terasa lebih nyaman dan rutinitas sehari-hari jadi lebih berarti.</p>
+          <div class="hero-actions">
+            <a href="#shop" class="button button-dark">Jelajahi koleksi <span>↗</span></a>
+            <a href="#about" class="button button-link">Cerita kami <span>→</span></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true"><span>R</span><span>A</span><span>D</span></div>
+            <p><strong>Dipilih dengan penuh perhatian.</strong><br />Dicintai untuk waktu yang lama.</p>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="Interior ruang keluarga bernuansa hangat dan minimalis" />
+          <div class="hero-image-label"><span>01 / 03</span><strong>Find your everyday calm.</strong></div>
+          <div class="hero-stamp"><span>CURATED</span><strong>WITH<br />CARE</strong><span>EST. 2021</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>DESIGNED FOR REAL LIFE</span><span class="hero-bottom-line"></span><span>JAKARTA, INDONESIA</span></div>
+    </section>
+
+    <!-- Benefit strip -->
+    <section class="benefit-strip" aria-label="Keunggulan layanan">
+      <div class="container benefit-grid">
+        <div class="benefit-item"><span class="benefit-icon">✳</span><div><strong>Curated quality</strong><small>Produk pilihan, bukan asal banyak.</small></div></div>
+        <div class="benefit-item"><span class="benefit-icon">♧</span><div><strong>Thoughtful packaging</strong><small>Dikemas aman dan penuh perhatian.</small></div></div>
+        <div class="benefit-item"><span class="benefit-icon">↗</span><div><strong>Easy shopping</strong><small>Belanja praktis dari mana saja.</small></div></div>
+        <div class="benefit-item"><span class="benefit-icon">♡</span><div><strong>Here to help</strong><small>Tim kami siap membantu kamu.</small></div></div>
+      </div>
+    </section>
+
+    <!-- Kategori produk -->
+    <section class="category-section section-space">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div><span class="eyebrow">EXPLORE BY CATEGORY</span><h2>Find your <em>favorite.</em></h2></div>
+          <p>Mulai dari sudut kecil di rumah sampai detail yang menemani harimu. Temukan kategori favoritmu.</p>
+        </div>
+        <div class="category-grid">
+          <a href="#shop" class="category-card category-large" data-category-link="home">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Ruang keluarga minimalis" />
+            <span class="category-overlay"><small>01 / MAKE YOUR SPACE</small><strong>Home & Living</strong><span>Explore collection ↗</span></span>
+          </a>
+          <a href="#shop" class="category-card" data-category-link="lifestyle">
+            <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=900&q=85" alt="Produk gaya hidup pilihan" />
+            <span class="category-overlay"><small>02 / DAILY ESSENTIALS</small><strong>Daily Lifestyle</strong><span>Explore collection ↗</span></span>
+          </a>
+          <a href="#shop" class="category-card" data-category-link="accessories">
+            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85" alt="Aksesori dan perlengkapan keseharian" />
+            <span class="category-overlay"><small>03 / LITTLE DETAILS</small><strong>Accessories</strong><span>Explore collection ↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Katalog toko online -->
+    <section class="shop-section section-space" id="shop">
+      <div class="container">
+        <div class="section-heading heading-row shop-heading">
+          <div><span class="eyebrow">THE GOOD THINGS</span><h2>Made to be <em>loved.</em></h2></div>
+          <p>Barang-barang sederhana, detail yang dipikirkan matang, dan kualitas yang bisa kamu rasakan.</p>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="filter-tabs" id="filterTabs" role="group" aria-label="Filter kategori produk">
+            <button class="filter-button active" data-filter="all">Semua</button>
+            <button class="filter-button" data-filter="home">Home & Living</button>
+            <button class="filter-button" data-filter="lifestyle">Lifestyle</button>
+            <button class="filter-button" data-filter="accessories">Accessories</button>
+          </div>
+          <div class="shop-tools">
+            <label class="sort-label" for="sortSelect">Urutkan</label>
+            <select id="sortSelect" class="sort-select" aria-label="Urutkan produk">
+              <option value="featured">Pilihan kami</option>
+              <option value="low">Harga terendah</option>
+              <option value="high">Harga tertinggi</option>
+              <option value="name">Nama A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="active-filter-info"><span id="productResultCount">6 produk</span><span id="wishlistModeLabel"></span></div>
+        <div class="product-grid" id="productGrid" aria-live="polite">
+          <!-- Kartu produk dibuat otomatis dari data di js/script.js -->
+        </div>
+        <div class="empty-state hidden" id="emptyProducts"><span>⌕</span><h3>Produk belum ditemukan</h3><p>Coba kata kunci atau kategori lainnya.</p><button class="button button-outline" id="resetFilters">Lihat semua produk</button></div>
+      </div>
+    </section>
+
+    <!-- Brand story / company profile -->
+    <section class="story-section section-space" id="about">
+      <div class="container story-grid">
+        <div class="story-image-wrap">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85" alt="Interior rumah dengan desain sederhana dan nyaman" />
+          <div class="story-image-caption"><span>OUR POINT OF VIEW</span><strong>Less, but better.</strong></div>
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">A LITTLE ABOUT NÉST</span>
+          <h2>Good things make<br />a <em>good everyday.</em></h2>
+          <p class="story-lead">Kami percaya, kehidupan yang terasa baik sering dimulai dari hal-hal sederhana.</p>
+          <p>NÉST & CO. lahir dari keinginan untuk menghadirkan produk rumah dan gaya hidup yang fungsional, nyaman, dan punya cerita. Sejak 2021, kami memilih setiap koleksi dengan satu pertanyaan: apakah produk ini benar-benar membuat keseharian jadi lebih baik?</p>
+          <a href="#our-values" class="button button-dark">Kenali nilai kami <span>↗</span></a>
+          <div class="story-stats" id="our-values">
+            <div><strong>2021</strong><span>Perjalanan dimulai</span></div>
+            <div><strong>100%</strong><span>Dipilih dengan teliti</span></div>
+            <div><strong>1 goal</strong><span>Better everyday living</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visi dan misi perusahaan -->
+    <section class="values-section section-space">
+      <div class="container">
+        <div class="values-intro"><span class="eyebrow">WHAT WE BELIEVE IN</span><h2>Small details.<br /><em>Meaningful difference.</em></h2></div>
+        <div class="values-grid">
+          <article class="value-card"><span class="value-number">01</span><span class="value-icon">◎</span><h3>Our Vision</h3><p>Menjadi brand pilihan untuk kebutuhan rumah dan gaya hidup yang membantu lebih banyak orang menikmati keseharian dengan nyaman dan sadar.</p></article>
+          <article class="value-card"><span class="value-number">02</span><span class="value-icon">✳</span><h3>Our Mission</h3><p>Menghadirkan produk berkualitas, pengalaman belanja yang mudah, pelayanan yang hangat, serta pilihan yang relevan dengan kebutuhan pelanggan.</p></article>
+          <article class="value-card"><span class="value-number">03</span><span class="value-icon">♡</span><h3>Our Promise</h3><p>Mendengarkan pelanggan, transparan dalam informasi, dan terus meningkatkan kualitas produk maupun layanan dari waktu ke waktu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial / journal -->
+    <section class="journal-section section-space" id="journal">
+      <div class="container">
+        <div class="section-heading heading-row"><div><span class="eyebrow">THE NÉST JOURNAL</span><h2>Notes for a <em>better day.</em></h2></div><p>Inspirasi kecil untuk menata ruang, merawat barang, dan menikmati rutinitas.</p></div>
+        <div class="journal-grid">
+          <article class="journal-card"><a href="#contact" class="journal-image"><img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=900&q=85" alt="Sudut ruang yang tertata" /><span>HOME NOTES</span></a><div class="journal-meta">5 MENIT MEMBACA · INSPIRASI</div><h3>Mulai dari satu sudut: cara membuat ruang terasa lebih lega</h3><a href="#contact" class="journal-link">Baca cerita <span>↗</span></a></article>
+          <article class="journal-card"><a href="#contact" class="journal-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85" alt="Benda-benda esensial untuk keseharian" /><span>EVERYDAY LIVING</span></a><div class="journal-meta">4 MENIT MEMBACA · TIPS</div><h3>Memilih barang sehari-hari yang fungsional dan tahan lama</h3><a href="#contact" class="journal-link">Baca cerita <span>↗</span></a></article>
+          <article class="journal-card"><a href="#contact" class="journal-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Inspirasi dekorasi rumah minimalis" /><span>SLOW LIVING</span></a><div class="journal-meta">6 MENIT MEMBACA · LIFESTYLE</div><h3>Ritual kecil yang membuat pulang terasa lebih menyenangkan</h3><a href="#contact" class="journal-link">Baca cerita <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-section">
+      <div class="container newsletter-inner">
+        <div><span class="eyebrow">A NOTE FROM US</span><h2>A little good news<br />for your <em>inbox.</em></h2><p>Dapatkan kabar koleksi terbaru, cerita, dan penawaran spesial dari kami.</p></div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="newsletterEmail">Alamat email kamu</label>
+          <div class="newsletter-input-wrap"><input type="email" id="newsletterEmail" placeholder="nama@email.com" required /><button type="submit" aria-label="Daftar newsletter">→</button></div>
+          <small>Dengan berlangganan, kamu menyetujui untuk menerima email dari NÉST & CO.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer company profile dan kontak -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand-col"><a class="brand footer-brand" href="#home"><span class="brand-mark">N.</span><span class="brand-copy"><strong>NÉST <span>&</span> CO.</strong><small>BETTER LIVING, EVERYDAY</small></span></a><p>Thoughtful goods for a more meaningful everyday. Temukan hal-hal baik untuk ruang dan rutinitasmu.</p><div class="social-links"><a href="#contact" aria-label="Instagram">ig</a><a href="#contact" aria-label="TikTok">tk</a><a href="#contact" aria-label="Pinterest">pin</a></div></div>
+      <div class="footer-link-col"><h4>Explore</h4><a href="#shop">Belanja semua</a><a href="#about">Tentang kami</a><a href="#journal">Journal</a><a href="#about">Visi & misi</a></div>
+      <div class="footer-link-col"><h4>Customer Care</h4><a href="#contact">Panduan belanja</a><a href="#contact">Pengiriman & retur</a><a href="#contact">Pertanyaan umum</a><a href="mailto:hello@nestco.example">Hubungi kami</a></div>
+      <div class="footer-contact-col"><h4>Say hello.</h4><p>Ada yang ingin ditanyakan? Kami senang mendengarnya.</p><a class="footer-email" href="mailto:hello@nestco.example">hello@nestco.example ↗</a><span>Senin–Jumat, 09.00–17.00 WIB</span><span>Jakarta, Indonesia</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 NÉST & CO. — Template website bisnis.</span><div><a href="#contact">Privacy</a><a href="#contact">Terms</a><a href="#top">Back to top ↑</a></div></div>
+  </footer>
+
+  <!-- Overlay untuk drawer dan modal -->
+  <div class="page-overlay" id="pageOverlay"></div>
+
+  <!-- Drawer keranjang belanja -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your bag <span id="drawerItemCount">(0)</span></h2></div><button class="close-button" id="closeCart" aria-label="Tutup keranjang">×</button></div>
+    <div class="shipping-progress"><div class="shipping-message" id="shippingMessage">Belanja Rp300.000 lagi untuk gratis ongkir.</div><div class="progress-track"><span id="shippingProgress"></span></div></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty"><span>♡</span><h3>Keranjangmu masih kosong.</h3><p>Yuk, temukan sesuatu yang kamu suka.</p><button class="button button-dark" id="continueShopping">Mulai belanja</button></div></div>
+    <div class="cart-summary" id="cartSummary">
+      <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">Rp0</strong></div>
+      <div class="summary-line"><span>Estimasi ongkir</span><strong id="cartShipping">Rp0</strong></div>
+      <div class="summary-line summary-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+      <button class="button button-dark checkout-button" id="checkoutButton">Lanjut ke checkout <span>→</span></button>
+      <small>Biaya pengiriman final dikonfirmasi saat checkout.</small>
+    </div>
+  </aside>
+
+  <!-- Modal detail produk -->
+  <div class="modal-shell" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle" aria-hidden="true">
+    <div class="modal-card product-modal-card"><button class="close-button modal-close" data-close-modal aria-label="Tutup detail produk">×</button><div id="productModalContent"></div></div>
+  </div>
+
+  <!-- Modal checkout (demo) -->
+  <div class="modal-shell" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="modal-card checkout-modal-card">
+      <button class="close-button modal-close" data-close-modal aria-label="Tutup checkout">×</button>
+      <span class="eyebrow">ALMOST YOURS</span><h2 id="checkoutTitle">Complete your <em>order.</em></h2><p class="modal-intro">Isi informasi pengiriman untuk melanjutkan pesanan.</p>
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-row"><div class="form-group"><label for="customerName">Nama lengkap</label><input id="customerName" name="name" type="text" placeholder="Nama penerima" required /></div><div class="form-group"><label for="customerPhone">Nomor telepon</label><input id="customerPhone" name="phone" type="tel" placeholder="08xxxxxxxxxx" required /></div></div>
+        <div class="form-group"><label for="customerEmail">Email</label><input id="customerEmail" name="email" type="email" placeholder="nama@email.com" required /></div>
+        <div class="form-group"><label for="customerAddress">Alamat lengkap</label><textarea id="customerAddress" name="address" rows="3" placeholder="Jalan, nomor rumah, kecamatan, kota, kode pos" required></textarea></div>
+        <div class="form-group"><label for="paymentMethod">Metode pembayaran (simulasi)</label><select id="paymentMethod" name="payment" required><option value="">Pilih metode pembayaran</option><option value="Transfer Bank">Transfer Bank</option><option value="E-Wallet">E-Wallet</option><option value="Virtual Account">Virtual Account</option><option value="COD">Bayar di tempat (COD)</option></select></div>
+        <div class="checkout-total-preview"><span>Total pesanan</span><strong id="checkoutTotal">Rp0</strong></div>
+        <button class="button button-dark checkout-submit" type="submit">Buat pesanan <span>→</span></button>
+        <small class="demo-notice">Mode demo: formulir ini tidak memproses pembayaran atau mengirim data ke server.</small>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast untuk feedback interaksi -->
+  <div class="toast-message" id="toastMessage" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
